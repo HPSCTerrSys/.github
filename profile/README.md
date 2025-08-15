@@ -1,4 +1,8 @@
-## User Guides
+This is the github profile page of the Centre for High-Performance Scientific Computing in Terrestrial Systems. 
+
+Updates are ongoing.
+
+Overview (incomplete) of user guides
 
 - **[TSMP1/TSMP2](https://terrsysmp.org/)**
   - [TSMP1 Docs](https://hpscterrsys.github.io/TSMP/index.html)
