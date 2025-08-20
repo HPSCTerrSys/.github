@@ -95,14 +95,77 @@ Repositories in the above categories are under the auspices of either one of the
 <summary>Click for details</summary>
 <br>
 
+How to work with the repositories, our concept of a fully modularized modeling platform, procedure to get a "simulation experiment" started and maintained
+
 ### The concept behind a modularized simulation platform
+
+Splitting one can maintain
+use standalone or in combination
+
+**concept**
 
 ### The procedure to use this platform and tools thereof exemplified with TSMP2
 
+**procedures**
+
+either standalone or a combination
+this is not the documentation for the TSMP2 model 
+The overall concepot of using the model system us described here.
+see extra docs perhaps, or make this collapsible
+
+```
+dir tree
+```
+
+this is stefans text for richard
+
+
 ### Working with modularized complete "simulation experiments" (SimExp)
+
+all components make up a simulation experiment
+
+ready to use or template / starting point
+
+once the workflow has been run through, the modularized system may be 
+
+Workflow engines comes with a full xperiment preconfigured.
+
+Background and concept:
+A "simulation experiment" is identified by an experiment-ID. Such a 
+"simulation experiment" consists of modular components. The components are 
+themselves git repositories; they may also be integrated as git submodules.
+A specific combination of the modular components is combined with each other 
+in a single git repository constituting the "experiment repository". This 
+repository is characterized by its commits and major releases are assigned 
+a git tag, i.e. its a specific release of an experiment. Aside from the git
+commits of the indivual model system components, the [CHANGELOG](./CHANGELOG) 
+of the experiment shows the major steps of the evolution of the experiment. 
+Once running stable, an experiment usually does not change anymore. Smaller 
+adjustments are still possible and are reflected by patches or minor version 
+changes (semantic versioning scheme). Some components are interchangeable 
+between different experiments (e.g., static fields), others are not (e.g.,
+a namelist with the physics settings).
+
+in an ongoing experiment, one might benefit from updated git submodules
+or what is more likely the case stay with commit
+
+so a set of commit hashed and repository URL defines the complete experiment
+
+the git submodules define what is cloned and loaded
+
+a default sim exp consists of nearly nothing but git submodiles, links to these siubmodules
+
+specific changes to a SimExp can be done, the just the git sibmodule needs to be removed and the part (directory) becomes part of the sim-Exp repository
+by maintaining the sim exp
+even if the underlying git submodulkes change over time, 
+
+substantial changes are reflected in new repos, such as a new model domain
+
+<!-- have git code snippets in here -->
 
 ### Existing SimExp
 
+What are typical combinations, introduce predefined simulation experiments, which are in use, e.g., in DEETCT CRC, short overview what is available
 </details>
 
 ## Current HPSC TerrSys development team
@@ -119,6 +182,13 @@ Repositories in the above categories are under the auspices of either one of the
 <summary>Click for details</summary>
 <br>
 
+Please see the individual repositories for User Guides, Reference Guides, How-Tos, and Tutorials. The Zenodo listings give an overview of research work done using HPSC TerrSys software.
+
+<Zenodo listing? see ParFlow>
+
+### With TSMP
+
+### By HPSC TerrSys
 </details>
 
 ## User guides
