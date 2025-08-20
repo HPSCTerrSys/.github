@@ -1,8 +1,3 @@
-<!-- # Add LICENSE -->
-<!-- ORCIDs? e-mails? get the consent of people -->
-<!-- Zenodo listing? see ParFlow -->
-
-<!-- URLs?, links to profile pages? -->
 **Welcome to the profile page of the Centre for High-Performance Scientific Computing in Terrestrial Systems (HPSC TerrSys) organization GitHub account.**
 
 ***HPSC TerrSys enables geosciences by high-performance computing (HPC).***
@@ -35,7 +30,7 @@ Very broadly our research interests are on the functioning and (climate change i
 Here we provide and share some of our core scientific computing tools for efficient joint cross-institutional development, community reuse, feedback, and potential collaboration, as well as for internal use within HPSC TerrSys.
 </details>
 
-# What we provide and how to use the GitHub repositories
+# What we provide and how to use the HPSC TerrSys GitHub repositories
 
 <details>
 <summary>Click for details</summary>
@@ -116,6 +111,7 @@ all components make up a simulation experiment
 The current development team as of mid 2025 in alphabetical order behind the HPSC TerrSys GitHub repositories with their respective main responsibilities:
 
 <add names after consent>
+<ORCIDs?, certainly no e-mails>
 
 See the LICENSE and/or CONTRIBUTERS files or list of Contributors in each repository for details and previous contributors.
 
@@ -129,6 +125,8 @@ See the LICENSE and/or CONTRIBUTERS files or list of Contributors in each reposi
 <br>
 
 Please see the individual repositories for User Guides, Reference Guides, How-Tos, and Tutorials. The Zenodo listings give an overview of research work done using HPSC TerrSys software.
+
+<Zenodo listing? see ParFlow>
 
 ## With TSMP
 
