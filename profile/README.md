@@ -34,7 +34,6 @@ Very broadly our research interests are on the functioning and (climate change i
 <!-- add technical e-mail address --> 
 Here we provide and share some of our core scientific computing tools for efficient joint cross-institutional development, community reuse, feedback, and potential collaboration, as well as for internal use within HPSC TerrSys.
 </details>
-<br>
 
 # What we provide and how to use the GitHub repositories
 
@@ -81,7 +80,6 @@ Repositories in the above categories are under the auspices of either one of the
 - D. Caviedes-Voullieme group
 
 </details>
-<br>
 
 <!-- 
 # How to work with the repositories, our concept of a fully modularized modeling platform and "simulation experiment"
@@ -107,7 +105,6 @@ see extra docs perhaps, or make this collapsible
 all components make up a simulation experiment
 
 </details>
-<br>
 -->
 <!--
 # Current HPSC TerrSys development team
@@ -123,7 +120,6 @@ The current development team as of mid 2025 in alphabetical order behind the HPS
 See the LICENSE and/or CONTRIBUTERS files or list of Contributors in each repository for details and previous contributors.
 
 </details>
-<br>
 -->
 <!--
 # Selected publications
@@ -139,7 +135,6 @@ Please see the individual repositories for User Guides, Reference Guides, How-To
 ## By HPSC TerrSys
 
 </details>
-<br>
 -->
 
 # User guides
@@ -166,6 +161,5 @@ Incomplete quick links to user guides (also referenced from the respective paren
   - [SLOTH](https://hpscterrsys.github.io/SLOTH/)
 
 </details>
-<br>
 
 <!-- examples: parflow ncar icon cordex -->
