@@ -100,7 +100,7 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 
 ### The concept behind a modularized simulation platform
 
-> [!IMPORTANT]
+> [!WARNING]
 > Each repository provides an independent piece of software, data, or information and has its own documentation (e.g., as a `README.md` project overview or GitHub Pages), LICENSE and may be used standalone. It is up to the user.
 
 - With HPSC TerrSys a highly modularized software development, maintenance, and deployment paradigm, which also affects our simulations. 
@@ -132,7 +132,7 @@ or you may not want to use TSMP2 fullxy coupled but just a component model, but 
 <!-- publication in JOSS planned -->
 ### The conept of working with modularized "simulation experiments" (SimExp)
 
-> [!IMPORTANT]
+> [!WARNING]
 > - With a SimExp everything is version-controlled via Git. The SimExp consists of modular parts or components. The parts or components are themselves Git repositories. They may be integrated as Git submodules (our preferred procedure we explain here). 
 > - A specific combination of the modular parts or components is combined with each other in a single SimExp's Git repository, constituting the "experiment repository". 
 > - Each (versioned) Git submodule can be identified by its unique Git commit hashes. The SimExp Git repository is characterized on top itself by its commits (major releases may be assigned a Git tag, i.e. its a specific release of this experiment). 
