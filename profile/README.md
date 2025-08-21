@@ -79,7 +79,7 @@ Here we provide and share some of our core scientific computing tools for effici
 - [(Generic) data analytics tools](https://github.com/orgs/HPSCTerrSys/teams/data-analytics/repositories)
 - [(Model system) auxiliary tools](https://github.com/orgs/HPSCTerrSys/teams/auxiliary-tools/repositories)
 
-These are the current GitHub Teams, i.e., the repository categories (according to the type of information). These GitHub Teams contain one or more repositories each. Each individual repository is assigned to a single type of information or category (i.e., Team) only.
+These are the current GitHub Teams, i.e., the repository categories (according to the type of information). These GitHub Teams contain one or more repositories each. Each individual repository is assigned to a single type of information or category (i.e., Team) only. Large files, e.g., readily prepared external parameter files for ICON, are usually stored under an open LFS Git repository outside GitHub. The repositories follow a certain naming scheme, seperated by underscores: `<type of content>_<model-system_specific-identifier>`, e.g., `NML_ICON_...`, `EO_ICON_...`.
 
 See [here for the full (unsorted) list](https://github.com/orgs/HPSCTerrSys/repositories) of HPSC TerrSys repositories.
 
@@ -131,7 +131,7 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 
 **Implications from using Git and Git submodules** 
 
-- A SimExp is usually stored also on a repository hub, as a dedicated [git repository](https://github.com/orgs/HPSCTerrSys/teams/simulation-experiments/repositories).
+- A SimExp is usually stored also on a repository hub, as a dedicated [Git repository](https://github.com/orgs/HPSCTerrSys/teams/simulation-experiments/repositories).
 - A SimExp Git repository contains a ready-to-use SimExp, which may be \*installed\* to "reproduce" (as close as possible, depending on the compute hard- and software environments) that very simulation or serve as a test case or benchmark or a template and starting point for a new SimExp. (E.g., the [TSMP2 workflow engine](https://github.com/HPSCTerrSys/TSMP2_workflow-engine) features a EURO-CORDEX-type, EUR-12 model domain, ERA5-driven evaluation run with TSMP2 in climate mode.)
 - Changes in the Git submodules are tracked in the respective Git repositories of the Git submodules (a submodule in the parent SimExp is just a pointer (i.e., a specific Git commit hash) from the parent SimExp Git repository to another Git repository), but they appear as commits in the SimExp Git history. (`git submodule status --recursive`) 
 
@@ -139,9 +139,9 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 
 - Such a SimExp is stored typically in a dedicated (unified -- if using, e.g., the workflow engine) directory tree on an HPC system. 
 - We try to avoid nested submodules, i.e. submodules inside submodules.
-- A "simulation experiment" may be identified by a unique self-explanatory experiment-ID, e.g., based on or inspired by the Data Reference Syntax definition from the CORDEX archive  specification. This is usually the directory name of the SimExp root directory.
-- Once running stable, the Git-tracked files of a SimExp (not the model results or boundary conditions) usually do not change much anymore. The exact commit hashes of the submodules as used are stored with the parent Git repository. Hence, if the parent SimExp repo is cloned (i.e., reused), the exact same SimExp is reproduced by means of the unique commit hashes. (`git clone --recurse-submodules <url>` clones the parent SimExp repo, initializes the submodules, checks out each submodule at the exact commit hash stored in the parent.)
-- If very specific modifications of a submodule are needed, which lead to a substantial divergence from its origin, and which are not relevant to be shared, a submodule may be transferred to a simple directory of the SimExp parent repo and tracked from there.
+- A SimExp may be identified by a unique self-explanatory SimExp-ID (e.g., based on or inspired by the Data Reference Syntax definition from the [CORDEX archive specification](https://zenodo.org/records/15047096)). This is usually the directory name of the SimExp root directory.
+- Once running stable, the Git-tracked files of a SimExp (i.e., not the model results or boundary conditions) usually do not change much anymore. As the commit hashes of the submodules as they are checked out are stored with the SimExp parent Git repository, the exact same SimExp is reproduced by means of the unique commit hashes of the SimExp parent Git repo and those of the submodules, if the parent SimExp repo is cloned (i.e., reused). (`git clone --recurse-submodules <url>` clones the parent SimExp repo, initializes the submodules, checks out each submodule at the exact commit hash stored with the parent.)
+- If very specific modifications of a submodule are needed, which lead to a substantial divergence from its origin, and which are not relevant to be shared, a submodule may be transferred into a simple directory of the SimExp parent repo and tracked from there.
 - Despite the fact that changes of a specific repository (e.g., a model configuration, i.e., namelist file) can be reflected in the Git history or branches, SimExp components are specific for a single purpose, i.e., a 12km simulation would use a different repository in the configuration category as a 3km simulation, and so forth. 
 - Despite the fact that once installed and used on an HPC system, the same model components (e.g., external parameter fields) exist alongside each other, each with a different SimExp, they only exist once in the main Git repository hub on GitHub. Depending on redundancies and filesystem and energy efficiency concerns, input data may be shared on a filesystem level by symbolic links.
 - Model outputs remain untracked.
@@ -149,8 +149,8 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 **Additional noteworthy implications**
 
 - With each simulation, hashes of the checked-out commits can be stored with the meta data of the simulation results, or a seperate history files, for provenance tracking.
-- If the changes to the components of a SimExp and the SimExp changes themselves are made frequently and promptly to their origins on the repository hub, the `repo-versions.txt` file with commit hashes and remote URLs suffices to reproduce a complete SimExp, from building, through preproprocessing to archiving.
-- A side effect of using the SimExp as a parent git repo (with submodules) is that unintended changes to the configuration and setup, workflow engine etc. can easily be detected.
+- If the changes to the components of a SimExp and the SimExp changes themselves are made frequently and promptly to their origins on the repository hub, the `repo-versions.txt` file with commit hashes and remote URLs suffices to reproduce a complete SimExp, from building, through preproprocessing, simulation, to archiving.
+- Using the SimExp as a parent Git repo (with submodules), unintended changes to, e.g., the configuration and setup, workflow engine etc. can easily be detected.
 - If it is not crucial to have frozen versions (=fixed commit hashes) for a SimExp components, the complete SimExp or parts thereof can be very quickly updated. (`git pull && git submodule update --init --recursive`)
 - The commit history of the SimExp parent repository may serve as a changelog of the SimExp. 
 
@@ -177,11 +177,44 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 <summary>Click for details</summary>
 <br>
 
-With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WFE)](https://github.com/HPSCTerrSys/TSMP2_workflow-engine). The [TSMP2 WFE has its own documentation](https://hpscterrsys.github.io/TSMP2_workflow-engine); nevertheless a brief overview will be given here in the context of the modularized SimExp concept presentation.
+With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WFE)](https://github.com/HPSCTerrSys/TSMP2_workflow-engine). The [TSMP2 WFE has its own documentation](https://hpscterrsys.github.io/TSMP2_workflow-engine); nevertheless a brief overview is given here in the context of the modularized SimExp concept presentation.
 
-> **_NOTE:_** As an experinced user you may still just retrieve TSMP2 including the built system and, e.g., an external parameter file dataset for a specific setup and install, setup, and run TSMP2 on your own, without, e.g., using the TSMP2 WFE or any namelist we provide.
+> **_NOTE:_** As an experienced user you may still just retrieve TSMP2 including the built system and, e.g., an external parameter file dataset for a specific setup and install, and then you may setup, and run TSMP2 on your own, without, e.g., using the TSMP2 WFE or any namelist we provide. The TSMP2 WFE and the Git-based SimExp handling may be more efficient though.
 
-<!-- ToDo: Distill StefanPolls e-mail on the matter here. -->
+**SimExp typical directory tree as used by HPSC TerrSys TSMP2** 
+
+```
+<SimExp-ID>/
+|    
+|---- ctl/
+|    |---- logs/
+|    |---- {pre,sim,pos,viz}_ctl/
+|---- dta/
+|    |---- forcing/
+|    |---- geo/
+|    |---- restart/
+|    |---- simres/
+|---- nml/
+|---- src/
+|---- run/
+```
+
+- `ctl` simulation experiment management (e.g., run-control scripts)
+- `dta` all SimExp-related data; `geo` with external parameter fields, `simres` with simulation results, etc., may be symbolic links
+- `nml` namelist(s) (maybe multiple namelists from different  repositories)
+- `src` source code of the numerical models and some auxiliary tools
+- `run` simulation and processing directory, no long-term storage of data 
+- `README.md` human-readable experiment description
+
+**Example SimExp with TSMP2**
+
+Some pseudo-code steps to run a real-data pan-European climate simulation using TSMP2 with a EURO-CORDEX CMIP6-downscaling experiment setup and configuration: Please follow the documentation for the [TSMP2 WFE here](https://hpscterrsys.github.io/TSMP2_workflow-engine).
+
+<!-- 
+ToDo: 
+Some addons.
+Additional remarks: Please control that you commit and push whenever you do changes.
+-->
 
 </details>
 
@@ -192,6 +225,8 @@ With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WF
 <br>
 
 We are in the process of providing our main SimExps (i.e., incl. all parts and components) used with TSMP1 and TSMP2, or ParFlow and eCLM standalone, e.g., from the DETECT CRC project and from EURO-CORDEX CMIP6 simulations through the HPSC TerrSys repository hub. 
+
+<!-- ToDo: Add the example, make sure the repo works, alternatively to above, one might get the very same SimExp straight away from the SimExp repos -->
 
 </details>
 
