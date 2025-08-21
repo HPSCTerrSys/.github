@@ -1,6 +1,6 @@
 **Welcome to the profile page of the Centre for High-Performance Scientific Computing in Terrestrial Systems (HPSC TerrSys) organization GitHub account.**
 
-HPSC TerrSys enables geosciences by high-performance computing (HPC).
+**_HPSC TerrSys enables geosciences by high-performance computing (HPC)._**
 
 ## Introduction
 
@@ -14,7 +14,7 @@ The HPSC TerrSys repositories are the official home of
 - the fully coupled, physics-based **Terresterial Systems Modeling Platform ([TSMP1](https://github.com/HPSCTerrSys/TSMP) and [TSMP2](https://github.com/HPSCTerrSys/TSMP2))** regional climate/Earth system model (RCSM, RESM), linking the [ICON atmospheric model](https://www.icon-model.org) with the [eCLM land surface model](https://github.com/HPSCTerrSys/eCLM) and with the [integrated ParFlow hydrologic model](https://github.com/parflow/parflow) through the [OASIS-MCT coupler](https://gitlab.com/cerfacs/oasis3-mct),
 - [PDAF-based parallel](https://github.com/PDAF/PDAF) **data assimilation versions** of TSMP1 and TSMP2 and eCLM, 
 
-plus software tools for the pre- and postprocessing and analysis of model data, all necessary auxiliary simulation tools (built systems, workflow engines, external parameter file generators, etc.), complete simulation experiments (incl. configurations, input and reference data), as well as documentation, unless otherwise stated, provided as free and open source software (FOSS), or under a CC BY license for many datasets (see individual LICENSE files).
+plus software tools for the pre- and postprocessing and analysis of model data, all necessary auxiliary simulation tools (built systems, workflow engines, external parameter file generators, etc.), complete simulation experiments (incl. configurations, input and reference data), as well as documentation. Unless otherwise stated, all is provided as free and open source software (FOSS), or under a CC BY license for many datasets (see individual LICENSE files).
 </details>
 
 ## Research groups behind HPSC TerrSys
@@ -23,7 +23,7 @@ plus software tools for the pre- and postprocessing and analysis of model data, 
 <summary>Click for details</summary>
 <br>
 
-HPSC TerrSys software, input data etc. are developed and produced by and under the auspices of the research groups of 
+HPSC TerrSys software, data, information products, etc. are developed and produced by and under the auspices of the research groups of 
 
 - **Stefan Kollet** ([Integrated Modelling of Terrestrial Systems at FZJ/IBG-3](https://www.fz-juelich.de/en/ibg/ibg-3/research-groups/modelling-terrestrial-systems/integrated-modelling-of-terrestrial-systems)),
 - **Harrie-Jan Hendricks-Franssen** ([Stochastic Analysis of Terrestrial Systems at FZJ/IBG-3](https://www.fz-juelich.de/en/ibg/ibg-3/research-groups/modelling-terrestrial-systems/stochastic-analysis-of-terrestrial-systems)), and 
@@ -33,12 +33,12 @@ at [Research Centre Juelich (Forschungszentrum Jülich, FZJ](https://www.fz-juel
 
 ### Our research focus in a nutshell
 
-Very broadly our research interests are on the functioning and (climate change induced) changes of coupled geo-ecosystems, the water and energy cycles therein, characterized by complex feedbacks and interactions, from the groundwater, through the land surface, to the atmosphere, including human interventions, such as anthropogenic water use. 
+Very broadly, our research interests are on the functioning and (climate change induced) changes of coupled geo-ecosystems, the water and energy cycles therein, characterized by complex feedbacks and interactions, from the groundwater, through the land surface, to the atmosphere, including human interventions, such as anthropogenic water use. 
 
 ### FOSS and FAIR
 
-<!-- add technical e-mail address --> 
-Here we provide and share some of our core scientific computing tools for efficient joint cross-institutional development, community reuse, feedback, and potential collaboration, as well as for internal use within HPSC TerrSys and as a basis for how procedures work.
+<!-- ToDo: add technical e-mail address --> 
+Here we provide and share some of our core scientific computing tools for efficient joint cross-institutional development, community reuse, feedback, and potential collaboration, as well as for internal use within HPSC TerrSys.
 </details>
 
 ## Content and usage of our repositories
@@ -51,16 +51,13 @@ This profile page is the top-level, overarching starting point where we
 
 - list different types or categories of repositories, grouped in GitHub Teams, each with their own short description,
 - explain the relation of the types or categories of repositories and information provided therein, as part of modularized simulations,
-- introduce a uniform nomenclature we use throughout the repositories, and 
-- elaborate on our concept of a "simulation experiment". 
-
-Although each repository provides an independent, mostly standalone piece of information or software and has its own documentation (e.g., as a `README.md` project overview or GitHub Pages), we follow a highly modularized software development, maintenance, and deployment paradigm. Here individual, independent Git repositories are combined (hierarchically), usually by means of Git submodules, to constitute, e.g., a coupled model system or simulation experiment. This leads to a lightweight, transparent, reproducible, maintainable, scalable, versioned, and provenance-enabled software infrastructure.
-
-The TSMP2 RESM follows this paradigm, that supports its properties and features as a versatile "platform" to built and expand simulation experiments on.
+- thereby introduce a uniform nomenclature we use throughout the repositories, and 
+- elaborate on our concept of a "simulation experiment" and procedures on how to use the repositories in combination. 
 
 ### Types of information and repository categories (=GitHub Teams)
 
-<!-- one needs to be GitHub organization Owner to add repos to teams or Team Owner / Maintainer and repo Owner / Admin at the same time -->
+<!-- ToDo: sort in all repositories of HPSC TerrSys, which have not yet been assigned to a category; one needs to be either GitHub organization Owner to add repos to a Github Team, or a GitHub Team Owner / Maintainer and repo Owner / Admin at the same time -->
+<!-- ToDo: maybe put this as quicklinks up front to the top of the page, depends on HPSC TerrSys community feedback -->
 
 - [Coupled model systems](https://github.com/orgs/HPSCTerrSys/teams/coupled-model-systems/repositories)
 - [Individual model systems](https://github.com/orgs/HPSCTerrSys/teams/individual-model-systems/repositories)
@@ -72,9 +69,7 @@ The TSMP2 RESM follows this paradigm, that supports its properties and features 
 - [(Generic) data analytics tools](https://github.com/orgs/HPSCTerrSys/teams/data-analytics/repositories)
 - [(Model system) auxiliary tools](https://github.com/orgs/HPSCTerrSys/teams/auxiliary-tools/repositories)
 
-These are the current GitHub teams, which contain one or more repositories each.
-
-Each individual repository is assigned to a single type of information or category only.
+These are the current GitHub Teams, which contain one or more repositories each. Each individual repository is assigned to a single type of information or category (i.e., Team) only.
 
 See [here for the full (unsorted) list](https://github.com/orgs/HPSCTerrSys/repositories) of HPSC TerrSys repositories.
 
@@ -82,7 +77,7 @@ See [here for the full (unsorted) list](https://github.com/orgs/HPSCTerrSys/repo
 
 Repositories in the above categories are under the auspices of either one of the following research groups at FZJ:
 
-<!-- create teams and add respective repositories -->
+<!-- ToDo: create teams of the research groups and add respective repositories according to code ownership, if this has the unanimous consent of the group leads -->
 - S. Kollet group
 - H.-J. Hendricks-Franssen group
 - D. Caviedes-Voullieme group
@@ -95,77 +90,95 @@ Repositories in the above categories are under the auspices of either one of the
 <summary>Click for details</summary>
 <br>
 
-How to work with the repositories, our concept of a fully modularized modeling platform, procedure to get a "simulation experiment" started and maintained
+<!-- this mightbe also called the "platform" concept, but this might be misleading, then platform is used in a more abstract meaning but it si s also the name of the TSMP1/2 -->
+<!-- perhaps reorder the sequence of the subsections -->
+To make best use of the software and data of the HPSC TerrSys GitHub, and to explain how we run many of our simulations in HPSC TerrSys,here's a quickstart guide to 
+1. our concept of a fully modularized modeling platform, 
+2. what we understand as a "simulation experiment" (SimExp),
+3. the procedure to get a SimExp started and maintained, 
+4. SimExp examples (that also serve as quickstart, test, benchmark use cases).
 
 ### The concept behind a modularized simulation platform
 
-Splitting one can maintain
-use standalone or in combination
+> [!IMPORTANT]
+> Each repository provides an independent piece of software, data, or information and has its own documentation (e.g., as a `README.md` project overview or GitHub Pages), LICENSE and may be used standalone. It is up to the user.
 
-**concept**
+- With HPSC TerrSys a highly modularized software development, maintenance, and deployment paradigm, which also affects our simulations. 
+- Individual, independent Git repositories are combined (hierarchically), usually by means of Git submodules, to constitute, e.g., a coupled model system or simulation experiment. This leads to a lightweight, transparent, reproducible, maintainable, scalable, versioned, and provenance-enabled software and simulation infrastructure. <!-- [See details below](#overarching-simulation-concept-and-procedures). -->
+- The TSMP RESMs (TSMP1 and TSMP2), e.g., follow this paradigm, that supports the properties and features of **TSMP as a versatile "platform" to built and expand simulation experiments** on, whether the fully coupled model system is used or only component models thereof.
+
+> **Simuation Experiments (SimExp)**
+>
+> A SimExp entails \*everthing\* that determines the simulation and its results. I.e., a SimExp contains: 
+> - the model source code, the compiled model, the built system incl. machine-dependent compile-time and run-time environments; 
+> - the workflow to set up the model domain and to process external parameter input data, initial conditions, and boundary conditions;
+> - a workflow engine to efficiently run the model system (test runs, ensemble runs, long climate runs), orchestrating all data > handling, processing, start and restarts, etc.; 
+> - configurations for pre-/post-processing set up and the simulation itself; 
+> - postprocessing tools for data conversions (e.g., CMORization) and / or analyses; 
+> - monitoring tools; 
+> - data handling and archival tools; 
+> - a short human-readable experiment or run description documentation (aka simulation leaflet); 
+> - all input data (or detailed information, configurations and tools to produce these data at any time).
+
+<!--
+?????
+Splitting one can maintain
+use standalone or in any combination
+e.g. you may want to use the built system and the workflow to process external parameters, but not the workflow engine, as you maybe
+or you may not want to use TSMP2 fullxy coupled but just a component model, but the cmake built system works out for you
+?????
+-->
+
+<!-- publication in JOSS planned -->
+### The conept of working with modularized "simulation experiments" (SimExp)
+
+> [!IMPORTANT]
+> - With a SimExp everything is version-controlled via Git. The SimExp consists of modular parts or components. The parts or components are themselves Git repositories. They may be integrated as Git submodules (our preferred procedure we explain here). 
+> - A specific combination of the modular parts or components is combined with each other in a single SimExp's Git repository, constituting the "experiment repository". 
+> - Each (versioned) Git submodule can be identified by its unique Git commit hashes. The SimExp Git repository is characterized on top itself by its commits (major releases may be assigned a Git tag, i.e. its a specific release of this experiment). 
+
+**Implications from using Git and Git submodules** 
+
+- A SimExp is usually stored also on a repository hub, as a dedicated [git repository](https://github.com/orgs/HPSCTerrSys/teams/simulation-experiments/repositories).
+- A SimExp Git repository contains a ready-to-use SimExp, which may be \*installed\* to "reproduce" (as close as possible, depending on the compute hard- and software environments) that very simulation or serve as a test case or benchmark or a template and starting point for a new SimExp. (E.g., the [TSMP2 workflow engine](https://github.com/HPSCTerrSys/TSMP2_workflow-engine) features a EURO-CORDEX-type, EUR-12 model domain, ERA5-driven evaluation run with TSMP2 in climate mode.)
+- Changes in the Git submodules are tracked in the respective Git repositories of the Git submodules (a submodule in the parent SimExp is just a pointer (i.e., a specific Git commit hash) from the parent SimExp Git repository to another Git repository), but they appear as commits in the SimExp Git history. (`git submodule status --recursive`) 
+
+**Some technical aspects**
+
+- Such a SimExp is stored typically in a dedicated (unified -- if using, e.g., the workflow engine) directory tree on an HPC system. 
+- We try to avoid nested submodules, i.e. submodules inside submodules.
+- A "simulation experiment" may be identified by a unique self-explanatory experiment-ID, e.g., based on or inspired by the Data Reference Syntax definition from the CORDEX archive  specification. This is usually the directory name of the SimExp root directory.
+- Once running stable, the Git-tracked files of a SimExp (not the model results or boundary conditions) usually do not change much anymore. The exact commit hashes of the submodules as used are stored with the parent Git repository. Hence, if the parent SimExp repo is cloned (i.e., reused), the exact same SimExp is reproduced by means of the unique commit hashes. (`git clone --recurse-submodules <url>` clones the parent SimExp repo, initializes the submodules, checks out each submodule at the exact commit hash stored in the parent.)
+- If very specific modifications of a submodule are needed, which lead to a substantial divergence from its origin, and which are not relevant to be shared, a submodule may be transferred to a simple directory of the SimExp parent repo and tracked from there.
+- Despite the fact that changes of a specific repository (e.g., a model configuration, i.e., namelist file) can be reflected in the Git history or branches, SimExp components are specific for a single purpose, i.e., a 12km simulation would use a different repository in the configuration category as a 3km simulation, and so forth. 
+- Despite the fact that once installed and used on an HPC system, the same model components (e.g., external parameter fields) exist alongside each other, each with a different SimExp, they only exist once in the main Git repository hub on GitHub. Depending on redundancies and filesystem and energy efficiency concerns, input data may be shared on a filesystem level by symbolic links.
+- Model outputs remain untracked.
+
+**Additional noteworthy implications**
+
+- With each simulation, hashes of the checked-out commits can be stored with the meta data of the simulation results, or a seperate history files, for provenance tracking.
+- If the changes to the components of a SimExp and the SimExp changes themselves are made frequently and promptly to their origins on the repository hub, the `repo-versions.txt` file with commit hashes and remote URLs suffices to reproduce a complete SimExp, from building, through preproprocessing to archiving.
+- A side effect of using the SimExp as a parent git repo (with submodules) is that unintended changes to the configuration and setup, workflow engine etc. can easily be detected.
+- If it is not crucial to have frozen versions (=fixed commit hashes) for a SimExp components, the complete SimExp or parts thereof can be very quickly updated. (`git pull && git submodule update --init --recursive`)
+- The commit history of the SimExp parent repository may serve as a changelog of the SimExp. 
+
+> **Overall benefits of the HPSC TerrSys SimExp concept**
+> 
+> Simulations are: Portable, reproducible, lightweight, easy to implement, highly flexible, provenance-enabled, interchangable, open, easy to revise and discuss
+
+<!-- ToDo: have more git code snippets in text -->
 
 ### The procedure to use this platform and tools thereof exemplified with TSMP2
 
-**procedures**
+With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WFE)](https://github.com/HPSCTerrSys/TSMP2_workflow-engine). The [TSMP2 WFE has its own documentation](https://hpscterrsys.github.io/TSMP2_workflow-engine); nevertheless a brief overview will be given here in the context of the modularized SimExp concept presentation.
 
-either standalone or a combination
-this is not the documentation for the TSMP2 model 
-The overall concepot of using the model system us described here.
-see extra docs perhaps, or make this collapsible
+> **_NOTE:_** As an experinced user you may still just retrieve TSMP2 including the built system and, e.g., an external parameter file dataset for a specific setup and install, setup, and run TSMP2 on your own, without, e.g., using the TSMP2 WFE or any namelist we provide.
 
-```
-dir tree
-```
-
-this is stefans text for richard
-
-
-### Working with modularized complete "simulation experiments" (SimExp)
-
-all components make up a simulation experiment
-
-ready to use or template / starting point
-
-once the workflow has been run through, the modularized system may be 
-
-Workflow engines comes with a full xperiment preconfigured.
-
-Background and concept:
-A "simulation experiment" is identified by an experiment-ID. Such a 
-"simulation experiment" consists of modular components. The components are 
-themselves git repositories; they may also be integrated as git submodules.
-A specific combination of the modular components is combined with each other 
-in a single git repository constituting the "experiment repository". This 
-repository is characterized by its commits and major releases are assigned 
-a git tag, i.e. its a specific release of an experiment. Aside from the git
-commits of the indivual model system components, the [CHANGELOG](./CHANGELOG) 
-of the experiment shows the major steps of the evolution of the experiment. 
-Once running stable, an experiment usually does not change anymore. Smaller 
-adjustments are still possible and are reflected by patches or minor version 
-changes (semantic versioning scheme). Some components are interchangeable 
-between different experiments (e.g., static fields), others are not (e.g.,
-a namelist with the physics settings).
-
-in an ongoing experiment, one might benefit from updated git submodules
-or what is more likely the case stay with commit
-
-so a set of commit hashed and repository URL defines the complete experiment
-
-the git submodules define what is cloned and loaded
-
-a default sim exp consists of nearly nothing but git submodiles, links to these siubmodules
-
-specific changes to a SimExp can be done, the just the git sibmodule needs to be removed and the part (directory) becomes part of the sim-Exp repository
-by maintaining the sim exp
-even if the underlying git submodulkes change over time, 
-
-substantial changes are reflected in new repos, such as a new model domain
-
-<!-- have git code snippets in here -->
+<!-- ToDo: Distill StefanPolls e-mail on the matter here. -->
 
 ### Existing SimExp
 
-What are typical combinations, introduce predefined simulation experiments, which are in use, e.g., in DEETCT CRC, short overview what is available
+We are in the process of providing our main SimExps (i.e., incl. all parts and components) used with TSMP1 and TSMP2, or ParFlow and eCLM standalone, e.g., from the DETECT CRC project and from EURO-CORDEX CMIP6 simulations through the HPSC TerrSys repository hub. 
 </details>
 
 ## Current HPSC TerrSys development team
