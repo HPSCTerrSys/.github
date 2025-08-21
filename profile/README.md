@@ -177,10 +177,12 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 <summary>Click for details</summary>
 <br>
 
-With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WFE)](https://github.com/HPSCTerrSys/TSMP2_workflow-engine). The [TSMP2 WFE has its own documentation](https://hpscterrsys.github.io/TSMP2_workflow-engine); nevertheless a brief overview is given here in the context of the modularized SimExp concept presentation.
+With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WFE)](https://github.com/HPSCTerrSys/TSMP2_workflow-engine). The [TSMP2 WFE has its own documentation](https://hpscterrsys.github.io/TSMP2_workflow-engine) which comes complete with a usable SimExp example.
+<!-- ; nevertheless a brief overview is given here in the context of the modularized SimExp concept presentation. -->
 
 > **_NOTE:_** As an experienced user you may still just retrieve TSMP2 including the built system and, e.g., an external parameter file dataset for a specific setup and install, and then you may setup, and run TSMP2 on your own, without, e.g., using the TSMP2 WFE or any namelist we provide. The TSMP2 WFE and the Git-based SimExp handling may be more efficient though.
 
+<!--
 **SimExp typical directory tree as used by HPSC TerrSys TSMP2** 
 
 ```
@@ -209,6 +211,7 @@ With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WF
 **Example SimExp with TSMP2**
 
 Some pseudo-code steps to run a real-data pan-European climate simulation using TSMP2 with a EURO-CORDEX CMIP6-downscaling experiment setup and configuration: Please follow the documentation for the [TSMP2 WFE here](https://hpscterrsys.github.io/TSMP2_workflow-engine).
+-->
 
 <!-- 
 ToDo: 
