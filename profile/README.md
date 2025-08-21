@@ -15,6 +15,14 @@ The HPSC TerrSys repositories are the official home of
 - [PDAF-based parallel](https://github.com/PDAF/PDAF) **data assimilation versions** of TSMP1 and TSMP2 and eCLM, 
 
 plus software tools for the pre- and postprocessing and analysis of model data, all necessary auxiliary simulation tools (built systems, workflow engines, external parameter file generators, etc.), complete simulation experiments (incl. configurations, input and reference data), as well as documentation. Unless otherwise stated, all is provided as free and open source software (FOSS), or under a CC BY license for many datasets (see individual LICENSE files).
+
+This profile page is the top-level, overarching starting point where we
+
+- list different types or categories of repositories, grouped in GitHub Teams, each with their own short description,
+- explain the relation of the types or categories of repositories and information provided therein, as part of modularized simulations,
+- thereby introduce a uniform nomenclature we use throughout the repositories, and 
+- elaborate on our concept of a modularized "simulation experiment" and procedures on how to use the repositories in combination. 
+
 </details>
 
 ## Research groups behind HPSC TerrSys
@@ -31,30 +39,32 @@ HPSC TerrSys software, data, information products, etc. are developed and produc
 
 at [Research Centre Juelich (Forschungszentrum Jülich, FZJ](https://www.fz-juelich.de/en)) in the [Helmholtz Association of German Research Centres (HGF)](https://www.helmholtz.de/en/). Founded in 2011, [HPSC TerrSys](https://www.hpsc-terrsys.de/en) is a virtual competence center within the [Geoverbund ABC/J](https://www.geoverbund-abcj.de/en), the geoscientific network of the Aachen-Bonn-Cologne-Jülich research region, in Germany.
 
-### Our research focus in a nutshell
+<!-- ToDo: create teams of the research groups and add respective repositories according to code ownership, if this has the unanimous consent of the group leads, better: add a link behind each group above, saves space
+### Research group code ownerships and development leads
+
+Repositories in the above categories are under the auspices of either one of the following research groups at FZJ:
+
+- S. Kollet group
+- H.-J. Hendricks-Franssen group
+- D. Caviedes-Voullieme group
+-->
+
+**Our research focus in a nutshell**
 
 Very broadly, our research interests are on the functioning and (climate change induced) changes of coupled geo-ecosystems, the water and energy cycles therein, characterized by complex feedbacks and interactions, from the groundwater, through the land surface, to the atmosphere, including human interventions, such as anthropogenic water use. 
 
-### FOSS and FAIR
+**FOSS and FAIR**
 
 <!-- ToDo: add technical e-mail address --> 
 Here we provide and share some of our core scientific computing tools for efficient joint cross-institutional development, community reuse, feedback, and potential collaboration, as well as for internal use within HPSC TerrSys.
+
 </details>
 
-## Content and usage of our repositories
+## Repository content and repository categories (=GitHub Teams)
 
 <details>
 <summary>Click for details</summary>
 <br>
-
-This profile page is the top-level, overarching starting point where we
-
-- list different types or categories of repositories, grouped in GitHub Teams, each with their own short description,
-- explain the relation of the types or categories of repositories and information provided therein, as part of modularized simulations,
-- thereby introduce a uniform nomenclature we use throughout the repositories, and 
-- elaborate on our concept of a "simulation experiment" and procedures on how to use the repositories in combination. 
-
-### Types of information and repository categories (=GitHub Teams)
 
 <!-- ToDo: sort in all repositories of HPSC TerrSys, which have not yet been assigned to a category; one needs to be either GitHub organization Owner to add repos to a Github Team, or a GitHub Team Owner / Maintainer and repo Owner / Admin at the same time -->
 <!-- ToDo: maybe put this as quicklinks up front to the top of the page, depends on HPSC TerrSys community feedback -->
@@ -69,18 +79,9 @@ This profile page is the top-level, overarching starting point where we
 - [(Generic) data analytics tools](https://github.com/orgs/HPSCTerrSys/teams/data-analytics/repositories)
 - [(Model system) auxiliary tools](https://github.com/orgs/HPSCTerrSys/teams/auxiliary-tools/repositories)
 
-These are the current GitHub Teams, which contain one or more repositories each. Each individual repository is assigned to a single type of information or category (i.e., Team) only.
+These are the current GitHub Teams, i.e., the repository categories (according to the type of information). These GitHub Teams contain one or more repositories each. Each individual repository is assigned to a single type of information or category (i.e., Team) only.
 
 See [here for the full (unsorted) list](https://github.com/orgs/HPSCTerrSys/repositories) of HPSC TerrSys repositories.
-
-### Research group code ownerships and development leads
-
-Repositories in the above categories are under the auspices of either one of the following research groups at FZJ:
-
-<!-- ToDo: create teams of the research groups and add respective repositories according to code ownership, if this has the unanimous consent of the group leads -->
-- S. Kollet group
-- H.-J. Hendricks-Franssen group
-- D. Caviedes-Voullieme group
 
 </details>
 
