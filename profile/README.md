@@ -100,42 +100,34 @@ To make best use of the software and data of the HPSC TerrSys GitHub, and to exp
 
 ### The concept behind a modularized simulation platform
 
-> [!WARNING]
+<details>
+<summary>Click for details</summary>
+<br>
+
+> ❗ **Important**  
 > Each repository provides an independent piece of software, data, or information and has its own documentation (e.g., as a `README.md` project overview or GitHub Pages), LICENSE and may be used standalone. It is up to the user.
 
 - With HPSC TerrSys a highly modularized software development, maintenance, and deployment paradigm, which also affects our simulations. 
 - Individual, independent Git repositories are combined (hierarchically), usually by means of Git submodules, to constitute, e.g., a coupled model system or simulation experiment. This leads to a lightweight, transparent, reproducible, maintainable, scalable, versioned, and provenance-enabled software and simulation infrastructure. <!-- [See details below](#overarching-simulation-concept-and-procedures). -->
 - The TSMP RESMs (TSMP1 and TSMP2), e.g., follow this paradigm, that supports the properties and features of **TSMP as a versatile "platform" to built and expand simulation experiments** on, whether the fully coupled model system is used or only component models thereof.
 
-> **Simuation Experiments (SimExp)**
->
-> A SimExp entails \*everthing\* that determines the simulation and its results. I.e., a SimExp contains: 
-> - the model source code, the compiled model, the built system incl. machine-dependent compile-time and run-time environments; 
-> - the workflow to set up the model domain and to process external parameter input data, initial conditions, and boundary conditions;
-> - a workflow engine to efficiently run the model system (test runs, ensemble runs, long climate runs), orchestrating all data > handling, processing, start and restarts, etc.; 
-> - configurations for pre-/post-processing set up and the simulation itself; 
-> - postprocessing tools for data conversions (e.g., CMORization) and / or analyses; 
-> - monitoring tools; 
-> - data handling and archival tools; 
-> - a short human-readable experiment or run description documentation (aka simulation leaflet); 
-> - all input data (or detailed information, configurations and tools to produce these data at any time).
-
-<!--
-?????
-Splitting one can maintain
-use standalone or in any combination
-e.g. you may want to use the built system and the workflow to process external parameters, but not the workflow engine, as you maybe
-or you may not want to use TSMP2 fullxy coupled but just a component model, but the cmake built system works out for you
-?????
--->
+</details>
 
 <!-- publication in JOSS planned -->
-### The conept of working with modularized "simulation experiments" (SimExp)
+### Modularized "simulation experiments" (SimExp)
 
-> [!WARNING]
+<details>
+<summary>Click for details</summary>
+<br>
+
+> ❗ **Basic principles, use Git to maintain and organize a simulation**  
 > - With a SimExp everything is version-controlled via Git. The SimExp consists of modular parts or components. The parts or components are themselves Git repositories. They may be integrated as Git submodules (our preferred procedure we explain here). 
 > - A specific combination of the modular parts or components is combined with each other in a single SimExp's Git repository, constituting the "experiment repository". 
 > - Each (versioned) Git submodule can be identified by its unique Git commit hashes. The SimExp Git repository is characterized on top itself by its commits (major releases may be assigned a Git tag, i.e. its a specific release of this experiment). 
+
+> ✅ **Overall benefits of the HPSC TerrSys SimExp concept**
+> 
+> Simulations are: Portable, reproducible, lightweight, easy to implement, highly flexible, provenance-enabled, interchangable, open, easy to revise and discuss
 
 **Implications from using Git and Git submodules** 
 
@@ -162,13 +154,28 @@ or you may not want to use TSMP2 fullxy coupled but just a component model, but 
 - If it is not crucial to have frozen versions (=fixed commit hashes) for a SimExp components, the complete SimExp or parts thereof can be very quickly updated. (`git pull && git submodule update --init --recursive`)
 - The commit history of the SimExp parent repository may serve as a changelog of the SimExp. 
 
-> **Overall benefits of the HPSC TerrSys SimExp concept**
-> 
-> Simulations are: Portable, reproducible, lightweight, easy to implement, highly flexible, provenance-enabled, interchangable, open, easy to revise and discuss
+> **The contents of a SimExp**
+>
+> A SimExp entails \*everything\* that determines the simulation and its results. I.e., a SimExp contains: 
+> - the model source code, the compiled model, the built system incl. machine-dependent compile-time and run-time environments; 
+> - the workflow to set up the model domain and to process external parameter input data, initial conditions, and boundary conditions;
+> - a workflow engine to efficiently run the model system (test runs, ensemble runs, long climate runs), orchestrating all data > handling, processing, start and restarts, etc.; 
+> - configurations for pre-/post-processing set up and the simulation itself; 
+> - postprocessing tools for data conversions (e.g., CMORization) and / or analyses; 
+> - monitoring tools; 
+> - data handling and archival tools; 
+> - a short human-readable experiment or run description documentation (aka simulation leaflet); 
+> - all input data (or detailed information, configurations and tools to produce these data at any time).
 
 <!-- ToDo: have more git code snippets in text -->
 
-### The procedure to use this platform and tools thereof exemplified with TSMP2
+</details>
+
+### The procedure of using TSMP2 with a modularized simulation platform and SimExp
+
+<details>
+<summary>Click for details</summary>
+<br>
 
 With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WFE)](https://github.com/HPSCTerrSys/TSMP2_workflow-engine). The [TSMP2 WFE has its own documentation](https://hpscterrsys.github.io/TSMP2_workflow-engine); nevertheless a brief overview will be given here in the context of the modularized SimExp concept presentation.
 
@@ -176,10 +183,21 @@ With TSMP2 the SimExp concept is realized through the [TSMP2 workflow engine (WF
 
 <!-- ToDo: Distill StefanPolls e-mail on the matter here. -->
 
+</details>
+
 ### Existing SimExp
 
+<details>
+<summary>Click for details</summary>
+<br>
+
 We are in the process of providing our main SimExps (i.e., incl. all parts and components) used with TSMP1 and TSMP2, or ParFlow and eCLM standalone, e.g., from the DETECT CRC project and from EURO-CORDEX CMIP6 simulations through the HPSC TerrSys repository hub. 
+
 </details>
+
+</details>
+
+<!--
 
 ## Current HPSC TerrSys development team
 
@@ -197,12 +215,13 @@ We are in the process of providing our main SimExps (i.e., incl. all parts and c
 
 Please see the individual repositories for User Guides, Reference Guides, How-Tos, and Tutorials. The Zenodo listings give an overview of research work done using HPSC TerrSys software.
 
-<Zenodo listing? see ParFlow>
-
 ### With TSMP
 
 ### By HPSC TerrSys
+
 </details>
+
+-->
 
 ## User guides
 
