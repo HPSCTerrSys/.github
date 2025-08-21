@@ -25,7 +25,7 @@ This profile page is the top-level, overarching starting point where we
 
 </details>
 
-## Research groups behind HPSC TerrSys
+## HPSC TerrSys GitHub research groups
 
 <details>
 <summary>Click for details</summary>
@@ -60,7 +60,7 @@ Here we provide and share some of our core scientific computing tools for effici
 
 </details>
 
-## Repository content and repository categories (=GitHub Teams)
+## Repository content and categories (=GitHub Teams)
 
 <details>
 <summary>Click for details</summary>
@@ -85,21 +85,20 @@ See [here for the full (unsorted) list](https://github.com/orgs/HPSCTerrSys/repo
 
 </details>
 
-## Overarching simulation concept and procedures
+## Overarching concepts and procedures running HPSC TerrSys simulations
 
 <details>
 <summary>Click for details</summary>
 <br>
 
 <!-- this mightbe also called the "platform" concept, but this might be misleading, then platform is used in a more abstract meaning but it si s also the name of the TSMP1/2 -->
-<!-- perhaps reorder the sequence of the subsections -->
-To make best use of the software and data of the HPSC TerrSys GitHub, and to explain how we run many of our simulations in HPSC TerrSys,here's a quickstart guide to 
+To make best use of the software and data of the HPSC TerrSys GitHub, and to explain how we run and organize many of our simulations in HPSC TerrSys,here's a quickstart guide to 
 1. our concept of a fully modularized modeling platform, 
 2. what we understand as a "simulation experiment" (SimExp),
 3. the procedure to get a SimExp started and maintained, 
 4. SimExp examples (that also serve as quickstart, test, benchmark use cases).
 
-### The concept behind a modularized simulation platform
+### Modularized simulation platform concept
 
 <details>
 <summary>Click for details</summary>
